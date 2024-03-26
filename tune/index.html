@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Piano</title>
+</head>
+<body>
+    <style>
+        .white{
+            width: 5.2rem;
+            height: 16rem;
+            position: relative;
+            text-align: center;
+            border:1px solid #333;
+            border-radius: 0 0 10px 10px;
+            background-color: rgb(248, 248, 242);
+        }
+        .white:active{
+            box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+            background: linear-gradient(to bottom,#fff 0%,#eee 100%);
+        }
+        .black{
+            width: 2.5rem;
+            height: 10rem;
+            position: relative;
+            margin: 0 -22px 0 -22px;
+            border-radius: 0 0 15px 15px;
+            color: aliceblue;
+            background: linear-gradient(#333, #000);
+            z-index: 2;
+        }
+        .black:active{
+            box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
+            background: linear-gradient(to bottom,#000,#434343);
+        }
+    </style>
+    <div class="container w-screen h-screen flex justify-center flex-row items-center">
+        <div class="wrapper w-auto rounded-3xl p-10 bg-slate-700">
+                <div class="header flex flex-row justify-around items-center border py-2">
+                    <h2 class="font-mono text-4xl border w-1/2 text-white">Piano</h2>
+                    <div>
+                        <label for="volume">Volume</label><input type="range" name="" id="volume">
+                        <label for="show">Show Key</label><input type="checkbox" name="" id="show">
+                    </div>
+                    
+                </div>
+
+                <div class="w-full flex flex-row justify-center items-start">
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">A</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-3">W</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">S</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">E</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">D</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">F</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">T</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">G</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">Y</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">H</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">U</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">J</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">K</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">O</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">L</span></li>
+                    <li class="black list-none text-center relative "><span class="absolute bottom-6 left-4">P</span></li>
+                    <li class="white list-none text-center relative "><span class="absolute bottom-6">;</span></li>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
